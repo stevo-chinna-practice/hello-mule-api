@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="hello-mule-apiFlow" doc:id="44b0268f-470c-49ab-b302-5db93595ccc1" >
-		<http:listener doc:name="Listener" doc:id="ffe48106-b39b-4209-8953-dfab6250b1cf" config-ref="HTTP_Listener_config" path="hello-mule" allowedMethods="GET"/>
+		<http:listener doc:name="Listener for hello-mulle-api" doc:id="ffe48106-b39b-4209-8953-dfab6250b1cf" config-ref="HTTP_Listener_config" path="hello-mule" allowedMethods="GET"/>
 		<logger level="INFO" doc:name="Logger" doc:id="61f33aa5-7c69-4d38-bbee-1dd73137ce24" message="Hello Mule ESB"/>
 	</flow>
 
